@@ -44,3 +44,5 @@ Always keep in mind that this site is made for all age groups 13 and up, so any 
 - Any photographic material that would be illegal in the EU or UK is not allowed on the site.
 - Photographic images containing gore, abuse, child abuse, animal abuse, and other such content are strictly prohibited. Action will be taken against users who upload this sort of content.
 - Images containing *any* sexual or NSFW content are currently not allowed and will be removed, for the time being. We may change this rule in the future.
+
+## All posts also have to follow the [Community Guidelines](/Rules_and_Guidelines/Community_Guidelines).
