@@ -1,4 +1,5 @@
 # Search
+## How to query, filter, and explore Anthera
 
 The search bar has many various features and filters you can use to find exactly what you're looking for. This document will cover the important ones.
 
