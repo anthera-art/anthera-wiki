@@ -10,6 +10,9 @@ Tags start with #, e.g. if you want to see every post with the tag "dragon", you
 On occasion, you can also specify other operators, any from the following list:
 `=, !=, <, >, >=, !<=, !<, !>, !>=, !<=`, though this is not supported by every query just yet.
 
+
+
+
 ## @creator
 @creator searches by user handle (case insensitive)
 
@@ -35,10 +38,10 @@ Filters posts by rating.
 | Explicit   | explicit, e, 3    |
 
 
-## @artist
-Filters by artists in post (currently returns incorrect results)
+## @author / @artist
+Filters by authors in post (not creator!)
 
-## @folder
+## @library / @folder
 Filters by what folder the items are in, use folder ID.
 
 ## @likedby / @favouritedby
@@ -49,4 +52,12 @@ Search for posts with specific characters. e.g. `@character=@cyon/cyonsergal`
 
 You can also search just by character name (e.g. `@character=tanza3d`), but if multiple characters have the same handle, this will return all results.
 
+## @orderby
+Order posts by specific values, valid orderings are:
+date-published, date-posted, views, name, creator
 
+## @orderdir
+Direction of ordering, use 'descending' or 'ascending'. Defaults to 'descending'.
+
+## @type
+Search posts by type. Search for multiple by using `|` (e.g. `@type=text|art`) - the UI has options for this 
