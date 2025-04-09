@@ -10,7 +10,7 @@ POST (preferably)
 Data:
 - Query
   - Required.
-  - Uses same syntax as the search bar. [Learn about Search Queries here](/wiki/Miscellaneous/Search)
+  - Uses same syntax as the search bar. [Learn about Search Queries here](Miscellaneous/Search)
 - Offset
   - Amount of items (__not pages!__) to offset the result by.
   - e.g. If your pages show 30 items per page, for page 2 you would want offset 30
