@@ -54,7 +54,8 @@ You can also search just by character name (e.g. `@character=tanza3d`), but if m
 
 ## @orderby
 Order posts by specific values, valid orderings are:
-date-published, date-posted, views, name, creator
+`date-published`, `date-posted`, `views`, `name`, `creator`, `stars`
+
 
 ## @orderdir
 Direction of ordering, use 'descending' or 'ascending'. Defaults to 'descending'.
