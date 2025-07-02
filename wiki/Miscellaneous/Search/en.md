@@ -12,20 +12,25 @@ On occasion, you can also specify other operators, any from the following list:
 
 
 
-
 ## @creator
 @creator searches by user handle (case insensitive)
 
+`@creator=tanza3d`
+
 ## @creatorid
-@creatorid searches by 
+@creatorid searches by numeric user ID
+
+`@creator=1750074177708288`
 
 ## @status
 Filters posts by current status.
 
-0 = unpublished<br>
-1 = unlisted<br>
-2 = published<br>
+0 = unpublished  
+1 = unlisted  
+2 = published  
 3 = blocked
+
+`@status=2`
 
 ## @rating
 Filters posts by rating.
@@ -37,28 +42,50 @@ Filters posts by rating.
 | Mature     | mature, m, 2      |
 | Explicit   | explicit, e, 3    |
 
+`@rating!=e` (rating is not explicit)
 
-## @author / @artist
-Filters by authors in post (not creator!)
+## @author / @artist and @authorid / @artistid
+Filters by authors in post (not creator!)  
+Use handle (e.g. `@author=foo`) or user ID (`@authorid=123`)
 
 ## @library / @folder
-Filters by what folder the items are in, use folder ID.
+Filters by what folder the items are in, use folder ID
 
 ## @likedby / @favouritedby
-Search users' liked posts. Use user ID
+Filters items liked/favorited by a specific user ID
 
 ## @character
-Search for posts with specific characters. e.g. `@character=@cyon/cyonsergal`
-
-You can also search just by character name (e.g. `@character=tanza3d`), but if multiple characters have the same handle, this will return all results.
-
-## @orderby
-Order posts by specific values, valid orderings are:
-`date-published`, `date-posted`, `views`, `name`, `creator`, `stars`
-
-
-## @orderdir
-Direction of ordering, use 'descending' or 'ascending'. Defaults to 'descending'.
+Search for posts with specific characters.  
+Supports two forms:
+- `@character=charname`
+- `@character=@owner/charname` for specificity
 
 ## @type
-Search posts by type. Search for multiple by using `|` (e.g. `@type=text|art`) - the UI has options for this 
+Filters by content type.  
+Supports `|` for multiple (e.g. `@type=text|art`)
+
+## @orderby
+Order posts by specific values. Valid values:
+- `date-published`, `date_published` = Items.PublishDate
+- `date-posted`, `date_posted` = Items.PostDate
+- `date-created`, `date_created` = Items.Date
+- `views` = Items.Views
+- `name` = Items.Name
+- `creator` = Items.Creator
+- `stars`, `likes`, `favcount` = VoteCount
+- `random` = RAND()
+
+## @orderdir
+Sort direction. Use `ascending` or `descending`  
+Aliases: `orderdir`, `sortdir`
+
+## @followingauthor
+Filters for items where any author of a post is followed by you
+(only available when logged in)
+
+## @followingowner
+Filters for items where the **owner/creator** is followed by you  
+(only available when logged in)
+
+## @category
+Filter by numeric art category ID - best to use the dropdown on the explore page for this!
