@@ -2,4 +2,5 @@
 ## Misc
 
 # Subpages
-### - [FAQ](/Miscellaneous/Frequently_Asked_Questions)
+### - [FAQ](./Frequently%20Asked%20Questions)
+### - [Search](./Search)
