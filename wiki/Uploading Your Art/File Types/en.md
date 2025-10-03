@@ -16,7 +16,7 @@ Anthera supports a variety of file types for your art and media uploads.
 | SVG     |
 
 
-**Max file size:** 25 MB per file
+**Max file size:** 20 MB per file
 
 ---
 
