@@ -94,4 +94,4 @@ All posts must also follow the [Community Guidelines](/Rules_and_Guidelines/Comm
 
 
 ### NOTE:
-Keep in mind, we're a new site and I'm more than happy to recieve suggestions or thoughts about these rules and the community guidelines as well. If you have any thoughts, please contact me at contact@anthera.art!
+Keep in mind, we're a new site and I'm more than happy to recieve suggestions or thoughts about these rules and the community guidelines as well. If you have any thoughts, please contact me at contact@anthera.art or leave a post in the forum!

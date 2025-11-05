@@ -1,91 +1,109 @@
 # Search
 ## How to query, filter, and explore Anthera
 
-The search bar has many various features and filters you can use to find exactly what you're looking for. This document will cover the important ones.
+The search bar has many features and filters you can use to find exactly what you're looking for. This document covers the main ones.
 
-Filters start with "@", e.g. if you wanted to search for a post by the user tanza3d, you would do `@creator=tanza3d`, or if you only wanted to search for text posts, you can do `@type=text`
+- Filters start with "@", e.g. `@creator=tanza3d` to search for a post by the user tanza3d, or `@type=text` to search only for text posts.
 
-Tags start with #, e.g. if you want to see every post with the tag "dragon", you search `#dragon`. Start the tag with a ! to exclude, e.g. `!#dragon`
+  You can also use operators: `=, !=, <, >, <=, >=, !<, !>, !<=, !>=`. Not all filters support every operator yet.
+- Tags start with "#", e.g. `#dragon` to see every post with the tag "dragon". Start the tag with `!` to exclude, e.g. `!#dragon`.
+- You can also search by just typing into the field (e.g. just searching "protogen" would find all posts with Protogen mentioned in the title, or character names, or species, or various other fields)
 
-On occasion, you can also specify other operators, any from the following list:
-`=, !=, <, >, >=, !<=, !<, !>, !>=, !<=`, though this is not supported by every query just yet.
+---
 
-
+# Filters
 
 ## @creator
-@creator searches by user handle (case insensitive)
+Search by user handle (case-insensitive):
+`@creator=tanza3d`, `@creator=1`
 
-`@creator=tanza3d`
-
-## @creatorid
-@creatorid searches by numeric user ID
-
-`@creator=1750074177708288`
+## @author / @artist
+Filter by authors in a post (not the creator). E.g.
+`@author=@tanza3d`, `@author=`
 
 ## @status
-Filters posts by current status.
+Filter posts by status:
 
-0 = unpublished  
-1 = unlisted  
-2 = published  
-3 = blocked
+- `0` = unpublished
+- `1` = unlisted
+- `2` = published
+- `3` = blocked
 
-`@status=2`
+Example: `@status=2`
 
 ## @rating
-Filters posts by rating.
+Filter posts by rating:
 
-| Rating     | Valid Types       |
+| Rating     | Valid types       |
 |------------|-------------------|
 | Safe       | safe, s, 0        |
 | Suggestive | suggestive, su, 1 |
 | Mature     | mature, m, 2      |
 | Explicit   | explicit, e, 3    |
 
-`@rating!=e` (rating is not explicit)
-
-## @author / @artist and @authorid / @artistid
-Filters by authors in post (not creator!)  
-Use handle (e.g. `@author=foo`) or user ID (`@authorid=123`)
+Example: `@rating!=e` (queries rating is not explicit)
 
 ## @library / @folder
-Filters by what folder the items are in, use folder ID
+Filter by folder ID.
 
 ## @likedby / @favouritedby
-Filters items liked/favorited by a specific user ID
+Filter items liked or favorited by a specific user ID.
 
 ## @character
-Search for posts with specific characters.  
-Supports two forms:
-- `@character=charname`
-- `@character=@owner/charname` for specificity
+Search for posts with specific characters. Supports:
 
-## @type
-Filters by content type.  
-Supports `|` for multiple (e.g. `@type=text|art`)
+- `@character=charname` to find any character with specific name
+- `@character=@owner/charname` for specific owner
+- `@character=384` to find specific ID
 
 ## @orderby
-Order posts by specific values. Valid values:
-- `date-published`, `date_published` = Items.PublishDate
-- `date-posted`, `date_posted` = Items.PostDate
-- `date-created`, `date_created` = Items.Date
-- `views` = Items.Views
-- `name` = Items.Name
-- `creator` = Items.Creator
-- `stars`, `likes`, `favcount` = VoteCount
-- `random` = RAND()
+Order posts by specific values:
+
+- `date-published`, `date_published` → Items.PublishDate
+- `date-posted`, `date_posted` → Items.PostDate
+- `date-created`, `date_created` → Items.Date
+- `views` → Items.Views
+- `name` → Items.Name
+- `creator` → Items.Creator
+- `stars`, `likes`, `favcount` → VoteCount
+- `random` → RAND()
 
 ## @orderdir
-Sort direction. Use `ascending` or `descending`  
+Sort direction: `ascending` or `descending`  
 Aliases: `orderdir`, `sortdir`
 
+## @category
+Filter by numeric art category ID (use dropdown on explore page for reference)
+
+## @stars
+Filter by star count, e.g. `@stars>4`
+
+## @views
+Filter by view count, e.g. `@views>200`
+
+## @species
+Find posts with characters based on species, e.g. `@species=dragon`
+
+## @date/creationdate
+Filter posts based on their post date.
+- @date = The date the post was published
+- @creationdate = The Date that the user specified the piece was "created"
+
+Usage examples:
+- Find uploads in the past 5 days: <br>`@date=5d`
+- Find uploads from more than 2 weeks ago: <br>`@date<2w`
+- Find uploads between two specific dates: <br>`@date>2025-04-02 @date<2025-05-06`
+- Find art "created" in 2020: <br>`@datecreated=2020` <span class="icon-info" tooltip="Creation date is provided by the uploader of the post and is intended to be the date the piece of art is created. We do not verify or confirm this data and it may be incorrect."></span>
+
+
+<br>
+
+---
+# WIP/Unused
+Queries in this section are not properly supported, and may not always work correctly or at all.
+
 ## @followingauthor
-Filters for items where any author of a post is followed by you
-(only available when logged in)
+Filter for items where any author of a post is followed by you (logged in)
 
 ## @followingowner
-Filters for items where the **owner/creator** is followed by you  
-(only available when logged in)
-
-## @category
-Filter by numeric art category ID - best to use the dropdown on the explore page for this!
+Filter for items where the creator/owner is followed by you (logged in)
