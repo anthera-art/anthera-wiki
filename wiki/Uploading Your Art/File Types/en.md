@@ -15,16 +15,25 @@ Anthera supports a variety of file types for your art and media uploads.
 | AVIF    |
 | SVG     |
 
-
-**Max file size:** 20 MB per file
+**Max file size:** 25 MB per file
 
 ---
 
 ### Video Files
-Video content is not yet supported on Anthera, but we're working on it!
+| Format  |
+|---------|
+| MP4     |
+| MOV     |
+| AVI     |
+| WEBM    |
+| GIF     |
+| MKV     |
+
+
+**Max file size:** 50 MB per file
 
 ### Audio Files
-Similar to Videos, Audio content isn't yet supported, but it's coming soon!
+Audio content isn't yet supported, but it's coming soon!
 
 ---
 
