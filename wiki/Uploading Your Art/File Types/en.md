@@ -39,7 +39,7 @@ Audio content isn't yet supported, but it's coming soon!
 
 ### Other Notes
 - Large or unusual formats may be automatically converted or rejected.
-- Animated images (GIF/WebP) are not yet supported, please do not try and upload these yet.
+- A .gif file will play differently than other video formats (it will loop and have no playback controls)
 - If your upload fails, check the file type and size first.
 
 ---

@@ -21,7 +21,7 @@ Only if the commissioner allows it, always read their terms and guidelines on wh
 Of course! Our site is primarily catered towards furry art, but we allow all types of art and photos, as long as they follow the rules! Make sure to follow the Content Rules and Community Guidelines though, of course!
 
 - ## Can I tag other users in a post?
-Yes! You can tag people in a post description to credit them or reference them by using `@username`.
+Yes! You can tag people in a post description to credit them or reference them by using `@username` e.g.: @tanza
 
 - ## Why was my post hidden or removed?
 Posts can be hidden if they are rated incorrectly or violate content rules. Repeated violations may lead to account penalties.

@@ -93,8 +93,10 @@ Usage examples:
 - Find uploads in the past 5 days: <br>`@date=5d`
 - Find uploads from more than 2 weeks ago: <br>`@date<2w`
 - Find uploads between two specific dates: <br>`@date>2025-04-02 @date<2025-05-06`
-- Find art "created" in 2020: <br>`@datecreated=2020` <span class="icon-info" tooltip="Creation date is provided by the uploader of the post and is intended to be the date the piece of art is created. We do not verify or confirm this data and it may be incorrect."></span>
+- Find art "created" in 2020: <br>`@creationdate=2020` <span class="icon-info" tooltip="Creation date is provided by the uploader of the post and is intended to be the date the piece of art is created. We do not verify or confirm this data and it may be incorrect."></span>
 
+## @id
+Filter by item ID.
 
 <br>
 
